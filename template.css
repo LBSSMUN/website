@@ -334,6 +334,20 @@ footer {
     z-index: -1;
 }
 
+footer::after {
+    /* Footer Gradient, currently off! */
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: 
+  linear-gradient(to top, rgba(67, 67, 67, 0), rgba(255,255,255, 1));
+  pointer-events: none;
+}
+
 #footerText {
     position: absolute; 
     margin: 15px;
