@@ -183,3 +183,9 @@ iframe {
     max-width: 95%;
     height: 750px;
 }
+
+#sheetsCal {
+    @media (max-width: 675px) {
+        display: none;
+    }
+}
