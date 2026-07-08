@@ -134,7 +134,8 @@
     }
 }
 
-.profile-card.horizontal img {
+.profile-card.horizontal img,
+.profile-card.horizontal .img-placeholder {
     width: 350px;
     aspect-ratio: 16 / 9;
     margin-bottom: 0;
@@ -145,6 +146,7 @@
         object-fit: cover;
         background-color: #f0f0f0;
         margin-bottom: 15px;
+        margin-right: 0;
     }
 }
 
@@ -186,6 +188,62 @@ iframe {
 
 #sheetsCal {
     @media (max-width: 675px) {
-        display: none;
+        display: block;
+        /* Remove if looks bad on mobile? */
+    }
+}
+
+#secretariatSwitcher {
+    position: sticky;
+    top: 85px;
+    float: left;
+    margin-left: -50px;
+    width: 50px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: var(--lbss-purple);
+    padding: 0;
+    z-index: 2;
+    @media (max-width: 915px) {
+        margin-left: 0px;
+    }
+}
+
+#secretariatSwitcher:hover .secSwitchBtn.selected {
+    background-color: var(--lbss-purple);
+}
+
+#secretariatSwitcher .secSwitchBtn:hover {
+    background-color: var(--lbss-gold) !important;
+}
+
+.secSwitchBtn {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--lbss-purple);
+    color: white;
+    border: none;
+}
+
+.secSwitchBtn.selected {
+    background-color: var(--lbss-gold);
+}
+
+.secretariatDiv {
+    display: none;
+}
+.secretariatDiv.selected {
+    display: block;
+}
+
+#secretariatSwitcher .secSwitchBtn {
+    transition: background-color 0.3s ease;
+}
+
+#secretariat1920 {
+    @media (max-width: 915px) {
+        padding-left: 40px;
     }
 }
