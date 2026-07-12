@@ -50,17 +50,10 @@ fetch("/template.txt")
       const topBar = document.getElementById('topBar');
       let ticking = false;
       window.addEventListener('scroll', () => {
+      // topbar transparency, opaque on scroll
         if (!ticking) {
           window.requestAnimationFrame(() => {
             if (topBar) topBar.classList.toggle('scrolled', window.scrollY > 100);
-            if (window.location.href.includes("lb")) {
-              const drops = ['drop1','drop2','drop3','drop4'];
-              drops.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.classList.toggle('scrolled', window.scrollY > 100);
-              });
-            }
-
             ticking = false;
           });
           ticking = true;

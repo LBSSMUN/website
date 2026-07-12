@@ -2,6 +2,8 @@
 
 :root {
     --lbss-purple: #5a2d88;
+    --lbss-purple-dark: #4a256e;
+    --lbss-purple-darker: #351754;
     --lbss-gold: #fdc30f;
     --un-blue: #009edb;
 }
@@ -18,17 +20,15 @@ body {
     min-height: 100vh;
 }
 
-
 #topBar {
     position: fixed;
     width: 100%;
     height: 65px;
     box-sizing: border-box;
-    background-color: rgba(255,255,255, 0.025);
+    /* background-color: var(--lbss-purple); */
+    /* TOPBAR, transparent */
     top: 0;
     left: 0;
-    border-color: rgba(255, 255, 255, 0.25);
-    border-width: 3.5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 3;
     color: white;
@@ -43,11 +43,10 @@ body {
 }
 
 #links {
-    right: calc(1% + 10px);
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     font-size: clamp(0.05rem, 1.5vw, 1.4rem);
-    gap: 0.6rem;
     position: absolute;
     display: flex;
     align-items: center;
@@ -56,13 +55,71 @@ body {
     max-width: calc(100% - 340px);
     min-width: 0;
     flex-shrink: 1;
-    @media (max-width: 915px) {
+    height: 100%;
+    margin-top: -1px;
+}
+
+@media (max-width: 915px) {
+    #links {
         display: none;
     }
 }
 
+#links > div {
+    margin-top: -1px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#links > div > a {
+    display: inline-block;
+    height: min-content;
+    padding-bottom: 5px;
+    align-self: center;
+}
+
+#links > div:hover {
+    color: rgb(218, 218, 218);
+    background-color: var(--lbss-purple-dark);
+}
+
+#links > a {
+    margin-top: -1px;
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline-width: 0px;
+    stroke: none;
+}
+
+#links > a > div {
+    width: 100%;
+    text-align: center;
+    height: min-content;
+    padding-bottom: 5px;
+}
+
+#links > a:hover {
+    color: rgb(218, 218, 218);
+    background-color: var(--lbss-purple-dark);
+    outline-width: 0px;
+    border: none;
+    outline: none;
+}
+
+#links > :last-child {
+    padding-right: 20px;
+}
+
 #showMenu {
     display: none;
+    
     @media (max-width: 915px) {
         background-color: transparent;
         color: white;
@@ -86,7 +143,7 @@ body {
 
 #showMenu:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
-    color: rgba(245, 245, 245 0.99);
+    color: rgba(245, 245, 245, 0.99);
 }
 
 #menuOverlay {
@@ -147,17 +204,17 @@ body {
 
 #menu #hideMenu:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
-    color: rgba(245, 245, 245 0.99);
+    color: rgba(245, 245, 245, 0.99);
 }
 
 #menu #menulinks {
     display: block;
     position: absolute;
-    left:0;
+    left: 0;
     width: 290px;
     height: calc(100% - 80px);
     gap: 15px;
-    padding:5px;
+    padding: 5px;
     margin-top: 75px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -180,15 +237,10 @@ body {
     color: white;
     text-decoration: none;
     margin: 0;
-    padding: 5px 6px;
     white-space: nowrap;
     font-size: inherit;
     min-width: 0;
-}
-
-#links a:hover {
-    color: rgb(218, 218, 218);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: none;
 }
 
 #topBar.scrolled {
@@ -203,6 +255,7 @@ body {
     top: 5px;
     left: 5px;
     text-align: left;
+    
     @media (max-width: 915px) {
         left: 50px;
     }
@@ -219,6 +272,7 @@ body {
     color: white;
     font-size: 1.25em;
     line-height: 1;
+    
     @media (max-width: 915px) {
         font-size: 1.125em;
         left: 105px;
@@ -261,9 +315,10 @@ body {
     margin: 20px;
     padding: 40px;
     border-radius: 20px;
-    max-width: 900px; 
+    max-width: 900px;
     font-size: 1.45rem;
     text-align: center;
+    
     @media (max-width: 915px) {
         width: 300px;
     }
@@ -294,7 +349,7 @@ body {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding-top: 5px;
+    padding-top: 5px;   
     @media (max-width: 915px) {
         padding-top: 3px;
         font-size: 1.75rem;
@@ -307,7 +362,8 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     z-index: 0;
-        @media (max-width: 915px) {
+    
+    @media (max-width: 915px) {
         width: 275px;
         margin: 0;
     }
@@ -335,21 +391,19 @@ footer {
 }
 
 footer::after {
-    /* Footer Gradient, currently off! */
-  display: none;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  background-image: 
-  linear-gradient(to top, rgba(67, 67, 67, 0), rgba(255,255,255, 1));
-  pointer-events: none;
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to top, rgba(67, 67, 67, 0), rgba(255,255,255, 1));
+    pointer-events: none;
 }
 
 #footerText {
-    position: absolute; 
+    position: absolute;
     margin: 15px;
     padding: 20px;
     border-radius: 15px;
@@ -374,7 +428,7 @@ footer::after {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block;  
     @media (max-width: 915px) {
         display: block;
         height: fit-content;
@@ -383,17 +437,19 @@ footer::after {
 }
 
 .dropdown-content {
+    outline-width: 0px;
+    background-color: var(--lbss-purple-dark);
     display: none;
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
-    z-index: 5;
-    border-radius: 8px;
+    z-index: -1;
+    border-radius: 0px 0px 8px 8px;
     overflow: hidden;
     text-align: center;
+    
     @media (max-width: 915px) {
         display: none;
         position: relative;
@@ -404,13 +460,7 @@ footer::after {
         text-align: left;
         margin-left: 20px;
         width: 100%;
-    }
-}
-
-.dropdown-content.scrolled {
-    background-color: var(--lbss-purple);
-    @media (max-width: 915px) {
-        background-color: transparent;
+        background-color: var(--lbss-purple);
     }
 }
 
@@ -423,9 +473,14 @@ footer::after {
     transition: background-color 0.3s ease, color 0.3s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0;
+    
     @media (max-width: 915px) {
         border-bottom: 0;
     }
+}
+
+.dropdown-content :hover {
+    background-color: var(--lbss-purple-darker);
 }
 
 a {
@@ -449,11 +504,7 @@ a {
     height: 4rem;
     letter-spacing: 0.2em;
     padding: 0;
-    font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "ROND" 0;
+    font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "ROND" 0;
     transform: scaleX(2);
     position: absolute;
     bottom: 3.5%;
@@ -480,8 +531,8 @@ a {
 }
 
 .mobileonly {
-    display: none;
+    display: none;   
     @media (max-width: 915px) {
-        display:block;
+        display: block;
     }
 }

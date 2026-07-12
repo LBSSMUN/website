@@ -1,7 +1,7 @@
-<a href="/lb/index.html">Home</a>
-<a href="/lb/whatismun.html">What is Model UN?</a>
-<a href="/lb/secretariat.html">Secretariat</a>
-<a href="/lb/calendar.html">Calendar</a>
+<a href="/lb/index.html"><div>Home</div></a>
+<a href="/lb/whatismun.html"><div>What is Model UN?</div></a>
+<a href="/lb/secretariat.html"><div>Secretariat</div></a>
+<a href="/lb/calendar.html"><div>Calendar</div></a>
 <div class="dropdown">
     <a class="dropbtn" href="/lb/hs/index.html">HS ▼</a>
     <div id="drop1" class="dropdown-content">
@@ -25,10 +25,9 @@
             <a class="mobileonly" href="/lb/resources/index.html">Resources Homepage</a>
             <a href="https://chairtools.lbssmun.com">Chair Tools</a>
             <a href="/lb/resources/examples">Examples</a>
-            <a href="/lb/resources/conferences.html">Conference</a>
-            <a href="/lb/resources/nmun-rules.pdf">Rules, per NMUN</a>
+            <a href="/lb/resources/conferences.html">Conferences</a>
         </div>
     </div>
 </div>
-<a href="/lb/awards.html">Awards</a>
-<a href="/lb/contact.html">Contact</a>
+<a href="/lb/awards.html"><div>Awards</div></a>
+<a href="/lb/contact.html"><div>Contact</div></a>
