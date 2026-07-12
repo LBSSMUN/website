@@ -96,6 +96,7 @@ body {
     padding-right: 10px;
     outline-width: 0px;
     stroke: none;
+    transition: background-color 0.15s ease;
 }
 
 #links > a > div {
@@ -470,7 +471,7 @@ footer::after {
     text-decoration: none;
     display: block;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.15s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0;
     
