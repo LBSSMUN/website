@@ -39,7 +39,7 @@ body {
     font-size: 2.5em;
     font-weight: 200;
     min-width: 0;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #links {
@@ -59,7 +59,7 @@ body {
     margin-top: -1px;
 }
 
-@media (max-width: 915px) {
+@media (max-width: 960px) {
     #links {
         display: none;
     }
@@ -96,7 +96,7 @@ body {
     padding-right: 10px;
     outline-width: 0px;
     stroke: none;
-    transition: background-color 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 #links > a > div {
@@ -120,8 +120,7 @@ body {
 
 #showMenu {
     display: none;
-    
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         background-color: transparent;
         color: white;
         border: none;
@@ -136,9 +135,10 @@ body {
         margin: 0;
         padding: 0;
         font-size: 1.25em;
-        transform: scaleY(1.5) translateY(-50%);
+        transform: translateY(-50%);
+        font-weight: bold;
         white-space: nowrap;
-        transition: text-shadow 0.3s ease;
+        transition: all 0.3s ease;
     }
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 #menuOverlay {
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         position: fixed;
         top: 0;
         left: 0;
@@ -158,16 +158,16 @@ body {
         z-index: 4;
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.3s ease;
+        transition: all 0.3s ease;
     }
 }
 
 #menu {
     display: none;
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         display: block;
         transform: translateX(-100%);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
         width: 300px;
         height: 100%;
         position: fixed;
@@ -200,12 +200,11 @@ body {
     padding: 0;
     transform: scaleY(1.1) translateY(-35%);
     white-space: nowrap;
-    transition: text-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #menu #hideMenu:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
-    color: rgba(245, 245, 245, 0.99);
 }
 
 #menu #menulinks {
@@ -234,6 +233,10 @@ body {
     overflow: visible;
 }
 
+#menu #menulinks a:hover {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+}
+
 #links a {
     color: white;
     text-decoration: none;
@@ -256,8 +259,10 @@ body {
     top: 5px;
     left: 5px;
     text-align: left;
-    
-    @media (max-width: 915px) {
+}
+
+@media (max-width: 960px) {
+    #topBarLogo {
         left: 50px;
     }
 }
@@ -273,8 +278,10 @@ body {
     color: white;
     font-size: 1.25em;
     line-height: 1;
-    
-    @media (max-width: 915px) {
+}
+
+@media (max-width: 960px) {
+    #siteName {
         font-size: 1.125em;
         left: 105px;
     }
@@ -319,8 +326,7 @@ body {
     max-width: 900px;
     font-size: 1.45rem;
     text-align: center;
-    
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         width: 300px;
     }
 }
@@ -330,15 +336,15 @@ body {
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     padding-top: 5px;
-    font-size: 6em;
+    font-size: clamp(1.5rem, 8.7vw, 6em);
 }
 
 #subtitleWelcome {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: -25%;
-    font-size: 1.5em;
+    margin-top: -20%;
+    font-size: clamp(1.25rem, 3vw, 1.5em);
 }
 
 .rn {
@@ -350,8 +356,8 @@ body {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding-top: 5px;   
-    @media (max-width: 915px) {
+    padding-top: 5px;
+    @media (max-width: 960px) {
         padding-top: 3px;
         font-size: 1.75rem;
     }
@@ -363,8 +369,7 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     z-index: 0;
-    
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         width: 275px;
         margin: 0;
     }
@@ -429,8 +434,8 @@ footer::after {
 
 .dropdown {
     position: relative;
-    display: inline-block;  
-    @media (max-width: 915px) {
+    display: inline-block;
+    @media (max-width: 960px) {
         display: block;
         height: fit-content;
         width: 100%;
@@ -450,8 +455,7 @@ footer::after {
     border-radius: 0px 0px 8px 8px;
     overflow: hidden;
     text-align: center;
-    
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         display: none;
         position: relative;
         top: auto;
@@ -471,11 +475,10 @@ footer::after {
     text-decoration: none;
     display: block;
     font-size: 1.2rem;
-    transition: background-color 0.15s ease;
+    transition: all 0.15s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0;
-    
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         border-bottom: 0;
     }
 }
@@ -532,8 +535,8 @@ a {
 }
 
 .mobileonly {
-    display: none;   
-    @media (max-width: 915px) {
+    display: none;
+    @media (max-width: 960px) {
         display: block;
     }
 }

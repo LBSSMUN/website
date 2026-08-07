@@ -13,7 +13,7 @@
     text-align: center;
     font-size: 1.25rem;
     color: var(--lbss-purple);
-        @media (max-width: 915px) {
+        @media (max-width: 960px) {
         padding-bottom: 50px;
         padding-left: 20px;
         padding-right: 20px;
@@ -34,7 +34,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .blockLink:hover {
@@ -48,7 +48,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     background-color: transparent;
     border: 2px solid var(--lbss-purple);
     color: var(--lbss-purple) !important;
@@ -83,7 +83,7 @@
     text-align: center;
 }
 
-.profile-card img, 
+.profile-card img,
 .profile-card .img-placeholder {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -124,7 +124,7 @@
     flex: 1 1 100%;
     align-items: center;
     text-align: left;
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         flex: 1 1 250px;
         max-width: 300px;
         display: flex;
@@ -140,7 +140,7 @@
     aspect-ratio: 16 / 9;
     margin-bottom: 0;
     margin-right: 30px;
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
@@ -154,7 +154,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         align-items: center;
     }
 }
@@ -204,7 +204,7 @@ iframe {
     background-color: var(--lbss-purple);
     padding: 0;
     z-index: 2;
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         margin-left: 0px;
     }
 }
@@ -239,11 +239,36 @@ iframe {
 }
 
 #secretariatSwitcher .secSwitchBtn {
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #secretariat1920 {
-    @media (max-width: 915px) {
+    @media (max-width: 960px) {
         padding-left: 40px;
     }
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+    background-color: var(--lbss-purple);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--lbss-gold);
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
