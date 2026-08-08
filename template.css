@@ -365,10 +365,8 @@ body {
 
 #headerLogo {
     width: 350px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
     z-index: 0;
+    margin-top: 10%;
     @media (max-width: 960px) {
         width: 275px;
         margin: 0;
@@ -539,4 +537,10 @@ a {
     @media (max-width: 960px) {
         display: block;
     }
+}
+
+#searchwrapper {
+    margin: auto;
+    max-width: 700px;
+    display: flex;
 }
