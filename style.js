@@ -1,7 +1,7 @@
 
 let title = document.title;
 if (title === "Welcome") {
-  title = "Lake Braddock Secondary School <br> Model United Nations"
+  title = "Lake&nbsp;Braddock Secondary&nbsp;School <br> Model United&nbsp;Nations"
 }
 
 function initDropdowns() {
@@ -165,7 +165,6 @@ newHead.innerHTML = `
     <meta name="googlebot" content="index, follow">
     <meta name="author" content="Lake Braddock Secondary School Model UN">
     <title>${headTitle}</title>
-    <link rel="stylesheet" href="/template.css">
     <link rel="stylesheet" href="/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
