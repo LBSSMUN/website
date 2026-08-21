@@ -845,3 +845,40 @@ iframe {
     bottom:10px;
     right:10px;
 }
+
+#announcements {
+    background-color: var(--lbss-gold);
+    color: var(--lbss-purple);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#FAQ {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.qablock {
+    background-color: var(--lbss-purple);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    a {
+        color: var(--lbss-gold) !important;
+        text-decoration: underline;
+    }
+    a.blockLink {
+        color: white !important;
+        text-decoration: none;
+        border: 2px solid white;
+    }
+    a.blockLink:hover {
+            background-color: var(--lbss-gold);
+            border: 2px solid var(--lbss-gold);
+        }
+}
