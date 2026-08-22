@@ -584,6 +584,7 @@ a {
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 8px;
+    border: none;
     transition: all 0.3s ease;
 }
 
@@ -881,4 +882,11 @@ iframe {
             background-color: var(--lbss-gold);
             border: 2px solid var(--lbss-gold);
         }
+}
+
+.galleryimg {
+    width: 200px;
+    max-width: 25vw;
+    display: inline-block;
+    border-radius: 10px;
 }

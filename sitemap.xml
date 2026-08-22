@@ -1,75 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://lbssmun.com/index.html</loc>
-  </url>
-  <url>
-    <loc>https://lbssmun.com/lb/calendar.html</loc>
-  </url>
-  <url>
-    <loc>https://lbssmun.com/lb/index.html</loc>
-  </url>
-  <url>
-    <loc>https://lbssmun.com/lb/contact.html</loc>
-  </url>
-    <url>
-    <loc>https://lbssmun.com/lb/whatismun.html</loc>
+    <loc>https://www.lbssmun.com/index.html</loc>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/Logo.svg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/secretariat.html</loc>
+    <loc>https://www.lbssmun.com/lb/calendar.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/resources/index.html</loc>
+    <loc>https://www.lbssmun.com/lb/</loc>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/ms/index.html</loc>
+    <loc>https://www.lbssmun.com/lb/contact.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/ms/charter.html</loc>
+    <loc>https://www.lbssmun.com/lb/whatismun.html</loc>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/ms/mock.html</loc>
+    <loc>https://www.lbssmun.com/lb/secretariat.html</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/asher.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/grace.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/connor.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/victor.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/albert.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/quinn.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/isaac.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/avery.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/secretariat/sabreen.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/ms/photos.html</loc>
+    <loc>https://www.lbssmun.com/lb/resources/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/hs/index.html</loc>
+    <loc>https://www.lbssmun.com/lb/ms/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/hs/mock.html</loc>
+    <loc>https://www.lbssmun.com/lb/ms/charter.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/lb/hs/photos.html</loc>
+    <loc>https://www.lbssmun.com/lb/ms/mock.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/index.html</loc>
+    <loc>https://www.lbssmun.com/lb/ms/photos.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/committees.html</loc>
+    <loc>https://www.lbssmun.com/lb/hs/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/conference-info.html</loc>
+    <loc>https://www.lbssmun.com/lb/hs/mock.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/delegates.html</loc>
+    <loc>https://www.lbssmun.com/lb/hs/photos.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/location.html</loc>
+    <loc>https://www.lbssmun.com/conference/</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/policies.html</loc>
+    <loc>https://www.lbssmun.com/conference/committees.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lbssmun.com/conference/schedule.html</loc>
+    <loc>https://www.lbssmun.com/conference/conference-info.html</loc>
+    <priority>0.5</priority>
   </url>
-    <url>
-    <loc>https://lbssmun.com/lb/resources/examples/index.html</loc>
+  <url>
+    <loc>https://www.lbssmun.com/conference/delegates.html</loc>
+    <priority>0.5</priority>
   </url>
-    <url>
-    <loc>https://lbssmun.com/lb/resources/conferences.html</loc>
+  <url>
+    <loc>https://www.lbssmun.com/conference/location.html</loc>
+    <priority>0.5</priority>
   </url>
-    <url>
-    <loc>https://lbssmun.com/lb/awards.html</loc>
+  <url>
+    <loc>https://www.lbssmun.com/conference/policies.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/conference/schedule.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/examples/</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/conferences.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/awards.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/nmun-rules.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/ParliamentaryProcedure.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/PositionPapersPresentation.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/PositionPaperWritingGuide.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/ResolutionFormatAndSamplePhrases.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/SamplePositionPaper.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/resources/SpeechwritingPresentation.pdf</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.lbssmun.com/lb/brandsheet.html</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LBSS.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LBSS_Bruins.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/UN.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoBlack.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoBlue.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoGold.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoPurple.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoWhite.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoRainbow.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/Logo.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/Logo.ico</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/Logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/Logo.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoLowRes.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoName.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoFlippedGlobe.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/LogoNameFlippedGlobe.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/logo/design/bruinshape.svg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/250.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/400.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/800.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/1200.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/1600.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/3200.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/header/fullsize.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/250.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/400.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/800.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/1200.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/1600.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/3200.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lbssmun.com/img/footer/fullsize.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>
