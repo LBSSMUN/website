@@ -130,15 +130,15 @@ fetch("/template.html")
 
 const path = window.location.pathname.toLowerCase();
 let metaDescription = 'Lake Braddock Secondary School Model UN — news, resources, and conference information.';
-if (path.includes('/lb/') || path.endsWith('/index.html') || path === '/') {
+if (path.includes('/lb/') || path === '/') {
   metaDescription = 'Lake Braddock Model UN: club resources, schedules, and event information for students at Lake Braddock Secondary School.';
 } if (path.includes('/lb/resources') || path.includes('/resources')) {
   metaDescription = 'Resources for Model UN: guides, presentations, and reference documents to help delegates prepare position papers and speeches.';
 } if (path.includes('/conference')) {
   metaDescription = 'Conference information: schedules, committees, location, and registration links for the Model UN conference.';
-} if (path.includes('/conference/delegates') || path.includes('delegates.html')) {
+} if (path.includes('/conference/delegates') || path.includes('delegates/')) {
   metaDescription = 'Delegate information: rules, position paper guidance, and conference policies for delegates.';
-} if (path.includes('/lb/contact') || path.includes('contact.html')) {
+} if (path.includes('/lb/contact') || path.includes('contact/')) {
   metaDescription = 'Contact the Lake Braddock Model UN secretariat for questions about the club or upcoming conferences.';
 }
 
