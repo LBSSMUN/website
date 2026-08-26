@@ -691,6 +691,7 @@ a {
     aspect-ratio: 16 / 9;
     margin-bottom: 0;
     margin-right: 30px;
+    object-position: top;
     @media (max-width: 960px) {
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -791,12 +792,6 @@ iframe {
 
 #secretariatSwitcher .secSwitchBtn {
     transition: all 0.3s ease;
-}
-
-#secretariat1920 {
-    @media (max-width: 960px) {
-        padding-left: 40px;
-    }
 }
 
 .social-icon {
