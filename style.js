@@ -143,7 +143,7 @@ if (path.includes('/lb/') || path === '/') {
 }
 
 const newHead = document.createElement('head');
-const headTitle = title === "Lake Braddock Secondary School <br> Model United Nations"
+const headTitle = title === "Lake&nbsp;Braddock Secondary&nbsp;School <br> Model United&nbsp;Nations"
   ? "Lake Braddock Secondary School Model UN"
   : `${title} - Lake Braddock Model UN`;
 newHead.innerHTML = `
