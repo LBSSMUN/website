@@ -9,31 +9,28 @@ function initDropdowns() {
   dropdowns.forEach(dropdown => {
     const content = dropdown.querySelector('.dropdown-content');
     const btn = dropdown.querySelector('.dropbtn');
-    
     if (content && btn) {
-      if (window.innerWidth <= 915) {
-        btn.addEventListener('click', (e) => {
+      dropdown.addEventListener('mouseenter', () => {
+        content.style.display = 'block';
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        content.style.display = 'none';
+      });
+
+      btn.addEventListener('click', (e) => {
+        if (window.innerWidth <= 960) {
           if (content.style.display !== 'block') {
             e.preventDefault();
             content.style.display = 'block';
-          }
-          else if (content.style.display === 'block') {
+          } else {
             e.preventDefault();
             content.style.display = 'none';
           }
-        });
-      } else {
-        dropdown.addEventListener('mouseenter', () => {
-          content.style.display = 'block';
-        });
-        dropdown.addEventListener('mouseleave', () => {
-          content.style.display = 'none';
-        });
-      }
+        }
+      });
     }
   });
 }
-
 fetch("/template.html")
   .then((res) => res.text())
   .then((text) => {
