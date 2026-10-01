@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght,wdth@6..144,1..1000,75..125&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 :root {
     --lbss-purple: #5a2d88;
     --lbss-purple-dark: #4a256e;
@@ -9,15 +8,20 @@
 }
 
 body {
-    font-family: "Oswald", "Google Sans Flex", sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+}
+
+h1, h2, h3, summary, nav a, .blockLink, .blockLinkoutline {
+    font-family: "Oswald", sans-serif;
 }
 
 #topBar {
@@ -431,7 +435,6 @@ footer::after {
 .dropbtn {
     background-color: transparent;
     color: white;
-    font-family: inherit;
     font-size: inherit;
     border: none;
     cursor: pointer;
@@ -496,10 +499,6 @@ footer::after {
         background-color: transparent;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
     }
-}
-
-a {
-    color: white;
 }
 
 #collapseHeaderBtn {
@@ -809,11 +808,11 @@ iframe {
     border-radius: 8px;
     transition: all 0.3s ease;
     text-decoration: none;
+    color: #ffffff;
 }
 
 .social-icon:hover {
     background-color: var(--lbss-gold);
-    color: #ffffff;
 }
 
 .social-icons {
