@@ -2,6 +2,20 @@
 <html lang="en">
 <head>
     <title>404</title>
+    <script>
+        (async function(){
+            const currentLoc = window.location.href;
+            const start = currentLoc.indexOf("lbssmun");
+            const key = currentLoc.slice(start + "lbssmun".length);
+            const res = await fetch("/redirects.json");
+            if (!res.ok) return;
+            const obj = await res.json();
+            const redirectURL = obj[key];
+            if (typeof redirectURL === "string" && redirectURL.trim() !== "" && /^https?:\/\//i.test(redirectURL)) {
+                window.location.replace(redirectURL);
+            }
+        })();
+    </script>
     <script src="/style.js"></script>
     <link rel ="stylesheet" href="https://lbssmun.com/style.css">
 </head>
